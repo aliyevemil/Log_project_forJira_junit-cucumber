@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="13.868">
+    <testcase classname="User can login &quot;upgenix&quot; page" name="user can login page and can see expected title" time="13.659">
+        <system-out>
+            <![CDATA[Given User username and password............................................passed
+When user go to main page...................................................passed
+And user enters username data...............................................passed
+And user enters password data...............................................passed
+And user can see top on the screen him|her username.........................passed
+Then user can see expected title on the page................................passed
+]]>
+        </system-out>
+    </testcase>
+</testsuite>
