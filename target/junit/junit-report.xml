@@ -1,15 +1,23 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="6.627">
-    <testcase classname="User can login &quot;upgenix&quot; page" name="Users enter &quot;Wrong login/password&quot; message should be displayed for invalid credentials" time="6.452">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="15.513">
+    <testcase classname="User can logout &quot;upgenix&quot; page" name="User can log out and ends up in login page." time="14.323">
         <system-out>
-            <![CDATA[When user enters wrong username "salesmanager@info.com".....................passed
-And user enters wrong password "salesmanager100"............................passed
+            <![CDATA[Given user go to login page.................................................passed
+When user enters username "salesmanager100@info.com"........................passed
+And user enters password "salesmanager".....................................passed
 And user clicks login button................................................passed
-Then "Wrong login/password" message should be displayed.....................passed
-When user enters wrong username "posmanager@info.com".......................passed
-And user enters wrong password "posmanager100"..............................passed
-And user clicks login button................................................passed
-Then "Wrong login/password" message should be displayed.....................passed
+When user clicks username...................................................passed
+And user clicks log out button..............................................passed
+Then user can see expected title on the page "Login | Best solution for startups".passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="User can logout &quot;upgenix&quot; page" name="User can not go to the home page again" time="1.03">
+        <system-out>
+            <![CDATA[When user clicks back button................................................passed
+And user see the description on the page....................................passed
+And user can not go to the home page........................................passed
+Then user can see logo the login page.......................................passed
 ]]>
         </system-out>
     </testcase>

@@ -1,4 +1,4 @@
-package com.cydeo.step_definitions;
+/*package com.cydeo.step_definitions;
 
 import com.cydeo.pages.LoginManager_Page;
 import com.cydeo.utilities.Driver;
@@ -119,4 +119,4 @@ loginManager_page.wrongMail.isDisplayed();
   public void user_without_filling_the_password_blank() {
 
   }
-}
+}*/

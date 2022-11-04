@@ -18,7 +18,7 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features",
         glue = "com/cydeo/step_definitions",
         dryRun = false,
-        tags = "@BRT-749"
+        tags = "@BRT-754 or @BRT-757"
 
 
 )
